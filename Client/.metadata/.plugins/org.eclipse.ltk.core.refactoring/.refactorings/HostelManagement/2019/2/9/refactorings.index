@@ -1,0 +1,25 @@
+1551073375528	Change Layout
+1551073538158	Extracts string 'null' into R.string.rtype
+1551073564515	Extracts string 'null' into R.string.nob
+1551073591274	Extracts string 'null' into R.string.desc
+1551073649524	Extracts string 'null' into R.string.b1
+1551077903902	Extracts string 'null' into R.string.creatertype
+1551078062766	Rename field 'button1'
+1551079783395	Change Layout
+1551079924907	Extracts string 'null' into R.string.price
+1551079960931	Extracts string 'null' into R.string.availability
+1551079989354	Extracts string 'null' into R.string.b2
+1551080268747	Rename field 'spinner1'
+1551080279324	Rename field 'spinner2'
+1551080330750	Rename field 'rid'
+1551081930476	Extracts string 'null' into R.string.selectroom
+1551084125976	Change Layout
+1551084350756	Extracts string 'null' into R.string.hid
+1551084389492	Extracts string 'null' into R.string.de
+1551106404005	Extracts string 'null' into R.string.b4
+1551106440393	Rename field 'editText1'
+1551106463104	Rename field 'editText2'
+1551106483012	Rename field 'button1'
+1551106512515	Rename field 'ratingBar1'
+1551110942869	Extracts string 'null' into R.string.review
+1551111343332	Extracts string 'null' into R.string.rev

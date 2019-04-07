@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sh.bsc.hostelmanagement"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sh.bsc.hostelmanagement.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.AdminHomeActivity"
+            android:label="@string/title_activity_admin_home" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.UsersActivity"
+            android:label="@string/title_activity_users" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.HostelHomeActivity"
+            android:label="@string/title_activity_hostel_home" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.CreateHostelActivity"
+            android:label="@string/title_activity_create_hostel" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.CreateRoomtypeActivity"
+            android:label="@string/title_activity_create_roomtype" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.CreateRoomActivity"
+            android:label="@string/title_activity_create_room" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.CreateReviewActivity"
+            android:label="@string/title_activity_create_review" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.SearchHostelActivity"
+            android:label="@string/title_activity_search_hostel" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.CreateBookingActivity"
+            android:label="@string/title_activity_create_booking" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.ViewHostelsActivity"
+            android:label="@string/title_activity_view_hostels" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.BookingActivity"
+            android:label="@string/title_activity_booking" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.BookingDetailsActivity"
+            android:label="@string/title_activity_booking_details" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.ViewCustomerActivity"
+            android:label="@string/title_activity_view_customer" >
+        </activity>
+        <activity
+            android:name="sh.bsc.hostelmanagement.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+    </application>
+
+</manifest>

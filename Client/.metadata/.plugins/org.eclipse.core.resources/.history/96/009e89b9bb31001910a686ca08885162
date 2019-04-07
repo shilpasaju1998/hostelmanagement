@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HostelManagement</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="mailid">E-Mail id</string>
+    <string name="pwd">Password</string>
+    <string name="confrmpwd">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="des">Description</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cust">Customers</string>
+    <string name="hostler">Hostlers</string>
+    <string name="customer">Customer</string>
+    <string name="hostl">Hostler</string>
+    <string name="namee">Name</string>
+
+</resources>

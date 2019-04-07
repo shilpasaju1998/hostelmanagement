@@ -1,0 +1,34 @@
+body{
+    background-image: url(../img/z.jpg);
+    background-size: cover;
+}
+.login{
+    width: 400px;
+    height: 300px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    /*margin: auto;*/
+      
+
+}
+.login input,.login select{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color:#003333;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+.login input[type='button']{
+    background-color: blue;
+    color: white;
+    border: 4px groove;
+}
+.login input[type='button']:hover{
+    background-color: red;
+}
+
+#err{color: red;}

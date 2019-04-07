@@ -1,0 +1,20 @@
+SMAP
+viewHostels_jsp.java
+JSP
+*S JSP
+*F
++ 0 viewHostels.jsp
+customer/viewHostels.jsp
+*L
+1,101:46
+102,6:148
+107,7:154
+114:161,5
+115,3:166
+118,3:169,3
+121,8:178
+129:186,3
+130,15:189
+145,5:205
+149,4:210
+*E

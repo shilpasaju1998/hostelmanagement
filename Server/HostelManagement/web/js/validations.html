@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Validations</title>
+                <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="validation-sherin_3.js"></script>
+	</head>
+	
+	<body>
+		<div id="err" style="color: red;height: 20px"></div>
+		<div>
+			<form>
+				Number/Age<input type="number" required="required" name="t1" min="15" max="50"/>
+				<input type="submit"/>
+			</form>
+		</div>
+		
+		<div>
+			<form>
+				Email<input type="email" required="required" name="t1"/>
+				<input type="submit"/>
+			</form>
+		</div>
+		
+		<div>
+			<form>
+				Names (Only Characters)<input type="text" onkeypress="return verifyText(event,'err')" required="required" name="t1"/>
+				<input type="submit"/>
+			</form>
+		</div>
+		
+		<div>
+			<form onsubmit="return validateForm(this,'err')">
+				Phone Number (Only Numbers)<input type="text" onkeypress="return verifyPhone(this,event,'err')" onblur="return varifyLength(this,'err',10,10);" required="required" name="t1"/>
+				<input type="submit"/>
+			</form>
+		</div>
+		
+		<div>
+			<form onsubmit="return validateForm(this,'err')">
+				Complex Password<input type="password" id="pwd" onblur="return verifyPwd(this,'err')" required="required" name="t1"/>
+				<br/>
+				<input type="password" id="cpwd" onblur="return confirmPwd('pwd','cpwd','err')" required="required" name="t2"/>
+				<input type="submit"/>
+			</form>
+		</div>
+		
+		<div>
+			<form>
+				Age Validator <input type="date" required="required" name="d1" id="d1" onchange="ageValidate(this,'err',18,40,'ageshow')"/>
+				<span id="ageshow"></span>
+				<input type="submit"/>
+			</form>
+		</div>
+		<div>
+			<form>
+				<h4>Date Comparison</h4>
+				Start Date <input type="date" required="required" name="dt1" id="dt1"/><br/>
+				To Date <input type="date" required="required" name="dt2" id="dt2" onchange="dateCompare('dt1','dt2',4,8,'err')"/><br/>
+				<span id="datediffshow"></span>
+				<input type="submit"/>
+			</form>
+		</div>
+		<div>
+			<form>
+				Date with Current Date <input type="date" required="required" name="dt3" id="dt3" onchange="dateWithCur('dt3',4,0,'err')"/>
+				<span id="datecurshow"></span>
+				<input type="submit"/>
+			</form>
+		</div>
+	</body>
+</html>

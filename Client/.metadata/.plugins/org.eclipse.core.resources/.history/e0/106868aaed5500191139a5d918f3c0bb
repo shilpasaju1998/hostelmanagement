@@ -1,0 +1,60 @@
+package stech.server;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLEncoder;
+import android.os.StrictMode;
+
+public class ServerConnection {
+	//public static final String sPath = "http://192.168.56.1:8084/HostelManagement/";
+	//public static final String sPath = "http://192.168.1.8:8084/HostelManagement/";
+	public static final String sPath = "http://192.168.1.4:8084/HostelManagement/";
+//	private final String sPath = "http://192.168.43.246:8084/HostelManagement/";
+	public String doPost(String path,String [][]datas) throws Exception{
+		System.err.println("Hitting server...");
+		//Allowing Permissions
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+			.permitAll().build();
+	    StrictMode.setThreadPolicy(policy); 
+		String data = encode(datas);
+		System.err.println("Datas : " + data);
+//		System.err.println("data : " + data);
+//		System.err.println("Path: " + sPath + path);
+		URL url = new URL(sPath + path);
+		URLConnection conn = url.openConnection();
+		conn.setDoOutput(true);
+		
+		//Post data to Server
+		OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream());
+		osw.write(data);
+		osw.flush();
+		
+		//System.err.println("Hitting server for input");
+		//Get Response from Server
+		data = streamToString(conn.getInputStream());
+		
+		return data;
+	}	
+	private String encode(String[][]datas) throws Exception{
+		if(datas==null) return "";
+		String data = "";
+		for(String []d : datas){
+			data += URLEncoder.encode(d[0],"UTF-8") + "=" 
+					+ URLEncoder.encode(d[1],"UTF-8") + "&";
+		}
+		data = data.substring(0,data.length()-1);
+		return data;
+	}
+	
+	private String streamToString(InputStream in)  throws Exception{
+		String data = "",line="";
+		BufferedReader br = new BufferedReader(new InputStreamReader(in));
+		while((line=br.readLine()) != null){
+			data += line;
+		}
+		return data;
+	}
+}

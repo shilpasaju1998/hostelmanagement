@@ -1,0 +1,15 @@
+1551503496820	Change Layout
+1551505318172	Extracts string 'null' into R.string.searchhostel
+1551506124346	Delete element
+1551506582972	Change Layout
+1551508525105	Extracts string 'null' into R.string.fd
+1551508624422	Extracts string 'null' into R.string.td
+1551508710698	Extracts string 'null' into R.string.book
+1551509129425	Rename field 'editText1'
+1551509137787	Rename field 'editText2'
+1551511615168	Rename field 'spinner1'
+1551511627925	Rename field 'spinner2'
+1551512427820	Rename field 'reason'
+1551512441850	Rename field 'idproof'
+1551512744350	Extracts string 'null' into R.string.reason
+1551512776487	Extracts string 'null' into R.string.idproof
