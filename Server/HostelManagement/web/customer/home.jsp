@@ -3,8 +3,10 @@
         <style>
             div{
                 position: absolute;
-                left: 50%; top:50%;
+                left: 50%; top:25%;
                 transform: translate(-50%,-50%);
+                font-size: 1.3em;
+                background-color: #e9edd3;
             }
             a{
                 text-decoration: none;
@@ -12,10 +14,14 @@
                 width: 200px;
                 /*height: 50px;*/
                 border: 4px solid;
-                background-color: green;
+                background-color: #b0b2a7;
                 color: white;
                 padding: 5px;
                 text-align: center;
+            }
+            
+            body{
+                background-color:#e9edd3;
             }
         </style>
     </head>

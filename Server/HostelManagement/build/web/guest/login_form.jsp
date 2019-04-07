@@ -29,17 +29,17 @@
         <style>
             .login{
                 position: absolute;
-                left: 50%; top: 50%;
+                left: 50%; top: 25%;
                 transform: translate(-50%,-50%);
             }
         </style>
     </head>
     <body>
         <div class="login">
-            <h3><b>LOGIN</b></h3>
+            <h1><b>LOGIN</b></h1>
             <input type="text" name="username" id ="username" placeholder="User Name"/>
             <input type="password" name="psd" id="psd" placeholder="Password"/>
-            <input type="button" value="Login" id="log"/>
+            <input type="button" value="SUBMIT" id="log"/>
             <h3 id="err"></h3>
             <h4>
                 New User ?  Sign up from Menu.
